@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="hanged-background">
+    <head>
+        <title>False friends game !</title>
+        <meta name="description" content="A translation game to learn false friends.">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../subsheetpages/falseFriends.css">
+    </head>
+
+    <body class="body">
+        <div id="quiz">
+          <h1 id="quiz-name"></h1>
+          <button id="submit-button">Submit Answers</button>
+          <button id="next-question-button">Next Question</button>
+          <button id="prev-question-button">Previous</button>
+
+          <div id="quiz-results">
+            <p id="quiz-results-message"></p>
+            <p id="quiz-results-score"></p>
+            <p id="quiz-results-correction"></p>
+            <ul id="quiz-results-translations"></ul>
+          </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="../json/falseFriendsWords.json"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/falseFriends.js"></script>
+</html>

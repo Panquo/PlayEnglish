@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="hanged-background">
+    <head>
+        <title>Words per minute !</title>
+        <meta name="description" content="A typing game to learn english words fast typing.">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../subsheetpages/wordsPerMinute.css">
+    </head>
+
+    <body class="body">
+        <div class="wrapper">
+          <div class="timer-container" v-if="start === true" :style="{width:timerWidth+'%'}"></div>
+
+          <div class="container">
+
+            <div class="start-container" v-if="start === false">
+              <div @click="startGame()" class="start-button">
+                Start
+              </div>
+              <div class="start-tutorial">
+                Hit the Enter key to start
+              </div>
+            </div>
+
+            <div class="result-container" v-if="done === true">
+              <h3>You type <strong>{{ countWords }}</strong> words per minute!</h3>
+        <!--       <div @click="resetGame()" class="reset-button">
+                Reset
+              </div> -->
+            </div>
+
+            <div class="word-container" v-if="done === false">
+              <div class="word">
+                <span v-for="(letter, index) in word" :class="[{active: index == currentLetterIndex-1 }]">{{ letter }}</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script type="text/javascript" src="../js/wordsPerMinute.js"></script>
+</html>
