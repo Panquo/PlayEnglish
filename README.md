@@ -1,26 +1,37 @@
-# Slim Framework 3 Skeleton Application
+Welcome to Glitch
+=================
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-## Install the Application
+Find out more [about Glitch](https://glitch.com/about).
 
-Run this command from the directory in which you want to install your new Slim Framework application.
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+Your Project
+------------
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+### ← README.md
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+That's this file, where you can tell people what your cool website does and how you built it.
 
-To run the application in development, you can also run this command. 
+### ← index.html
 
-	php composer.phar start
+Where you'll write the content of your website. 
 
-Run this command to run the test suite
+### ← style.css
 
-	php composer.phar test
+CSS files add styling rules to your content.
 
-That's it! Now go build something cool.
+### ← script.js
+
+If you're feeling fancy you can add interactivity to your site with JavaScript.
+
+### ← assets
+
+Drag in `assets`, like images or music, to add them to your project
+
+Made by [Glitch](https://glitch.com/)
+-------------------
+
+\ ゜o゜)ノ
