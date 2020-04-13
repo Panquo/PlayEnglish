@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    background: center top/ cover no-repeat url("https://cdn.glitch.com/9fd0d0d7-0418-4a55-a268-c3a53a167325%2F7f37663404c54de8415aac99a1d1bb1b.jpg?v=1586533400910") fixed;
+    height: 100%;
+    min-width: 800px;
+}
+
+.sections {
+    border: 2px double black;
+    margin: 10px 0;
+    padding: 0;
+    background-color: #7777;
+    border-radius: 5px;
+}
+
+.sections h3{
+    margin: 0 ;
+    background-color: #4447;
+}
+.sections a{
+    text-decoration: none;
+    color: #600;
+    padding: 10px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.crop{
+    padding: 10px;
+    margin: 0;
+    padding-right: 20px;
+    width:100%;
+    overflow:hidden;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+p,li{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    text-decoration:none;
+}
+a{
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #600;
+    text-decoration:none;
+}
+li{
+    text-emphasis: 400;
+}
+
+.background{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 80px;
+    background-color: #FFF;
+}
+
+.hdr{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    background: #FFF0;
+    padding: 10px 0 0;
+    min-width: 800px;
+}
+
+.header-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0);
+}
+
+.icon{
+    display:flex;
+    justify-content: center;
+    z-index: 1;
+    white-space: nowrap;
+    width: 11%;
+
+}
+
+.icon img{
+    border-radius: 5px;
+}
+
+.header-nav{
+    width: 78%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.menu,.menu2{
+    position: relative;
+    margin: 0 5px;
+}
+.divmenu{
+    position: relative;
+    z-index: 1;
+}
+
+.divmenu img{
+    opacity: 0.8;
+    width: 100%;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.divmenu img:hover, .divmenu img.active{
+    opacity: 1;
+}
+
+.social{
+    display:flex;
+    padding-top:20px;
+    justify-content: center;
+    white-space: nowrap;
+
+    width: 11%;
+}
+
+.social a{
+    z-index:1;
+    padding: 0 10px;
+    opacity:0.6;
+}
+.social a:hover{
+    opacity:1;
+}
+
+.banniere{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius:0 0 10px 10px;
+    height: 200px;
+    background: no-repeat center center / cover ;
+    background-image: linear-gradient(to bottom,#FFF,#0005),url("https://cdn.glitch.com/9fd0d0d7-0418-4a55-a268-c3a53a167325%2Fbanner.png?v=1586295928539");
+}
+
+.title-sect{
+    font-family: 'Baloo Paaji 2', cursive;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #600;
+}
+
+.banniere img{
+
+    margin: 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.banniere div{
+    line-height: 0.2;
+    width: 100%;
+}
+
+.div-ban{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right,#FFF,#FFF2)
+}
+
+body{
+    padding-top:80px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.page-wrap {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding: 0 5%;
+}
+
+
+
+.page-wrap:after {
+    content: "";
+    display: block;
+    height: 110px;
+}
+
+form {
+    margin: 0 auto;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 3px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+  
+    /* Pour donner assez de place pour écrire du texte */
+    height: 5em;
+  }
+  
+  .button {
+    /* Pour placer le bouton à la même position que les champs texte */
+    padding-left: 90px; /* même taille que les étiquettes */
+  }
+  
+  button {
+    /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+    margin-left: .5em;
+  }
+
+#gameframe{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#gg{
+    display: flex;
+    flex-direction: column;
+}
+
+#thegame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    min-height: 350px;
+    flex-grow: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gmif{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.maindiv{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 5px 5px;
+}
+
+.site-footer {
+    height: 100px;
+    left:0;
+    background-color: #FFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    align-items: center;
+    min-width: 800px;
+}
+
+.site-footer h2{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 0.8rem;
+    letter-spacing: 0.09em;
+    margin-block-start:0;
+    margin-block-end: 0;
+}
+.site-footer ul{
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.site-footer li{
+    font-size: 0.6rem;
+}
+
+.f_img{
+    width: 10%;
+}
+
+.f_img img{
+    width: 100%;
+}
